@@ -22,7 +22,7 @@ class MyTextViewDetector : Detector(), XmlScanner {
 
         context.report(
             issue = ISSUE,
-            location = context.getLocation(element),
+            location = context.getNameLocation(element),
             message = "Usage of android TextView is prohibited",
             quickfixData = quickfixData
         )
