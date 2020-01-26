@@ -1,5 +1,9 @@
 > False positives are better than false negatives
 
+## Todos
+- `BaseActivity` inherit Lint Check
+- Apply quick fix data methods from this video (https://youtu.be/p8yX5-lPS6o)
+
 ## Resources
 
 Videos
