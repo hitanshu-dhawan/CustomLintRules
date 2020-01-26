@@ -1,7 +1,8 @@
 package com.hitanshudhawan.customlintrules
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,4 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    private fun function() {
+
+        Log.d("TAG", "message")
+
+    }
+
 }
