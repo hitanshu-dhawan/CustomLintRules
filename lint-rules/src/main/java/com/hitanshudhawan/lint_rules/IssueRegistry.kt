@@ -8,7 +8,7 @@ class IssueRegistry : IssueRegistry() {
 
     override val issues: List<Issue>
         get() = listOf(
-            LogDetector.ISSUE
+            MyLogDetector.ISSUE
         )
 
     override val api: Int = CURRENT_API

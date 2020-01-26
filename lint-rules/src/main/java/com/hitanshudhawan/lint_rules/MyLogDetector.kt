@@ -5,7 +5,7 @@ import com.android.tools.lint.detector.api.LintFix
 import com.intellij.psi.PsiMethod
 import org.jetbrains.uast.UCallExpression
 
-class LogDetector : Detector(), SourceCodeScanner {
+class MyLogDetector : Detector(), SourceCodeScanner {
 
     override fun getApplicableMethodNames(): List<String> {
         return listOf("v", "d", "i", "w", "e")
@@ -50,7 +50,7 @@ class LogDetector : Detector(), SourceCodeScanner {
             category = Category.CORRECTNESS,
             priority = 3,
             severity = Severity.WARNING,
-            implementation = Implementation(LogDetector::class.java, Scope.JAVA_FILE_SCOPE)
+            implementation = Implementation(MyLogDetector::class.java, Scope.JAVA_FILE_SCOPE)
         ).setAndroidSpecific(true)
     }
 
