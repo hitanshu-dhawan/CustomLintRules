@@ -7,7 +7,7 @@
 ## Resources
 
 Videos
-- [Link](https://youtu.be/p8yX5-lPS6o) : Great KotlinConf talk by Tor Norbye! In-Depth knowledge! Excellent
+- [Link](https://youtu.be/p8yX5-lPS6o) : Great KotlinConf talk by Tor Norbye! In-Depth knowledge! Excellent : [Slides](https://resources.jetbrains.com/storage/products/kotlinconf2017/slides/KotlinConf+Lint+Slides.pdf)
 - [Link](https://youtu.be/ffH-LD5uP4s) : Getting the Most Out of Android Lint (Android Dev Summit '18)
 - [Link](https://youtu.be/jCmJWOkjbM0) : Coding in Style: Static Analysis with Custom Lint Rules (Android Dev Summit '19)
 
