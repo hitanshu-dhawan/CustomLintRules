@@ -1,7 +1,6 @@
 package com.hitanshudhawan.lint_rules
 
 import com.android.tools.lint.detector.api.*
-import com.android.tools.lint.detector.api.LintFix
 import com.intellij.psi.PsiMethod
 import org.jetbrains.uast.UCallExpression
 
@@ -19,16 +18,6 @@ class MyLogDetector : Detector(), SourceCodeScanner {
     }
 
     private fun reportUsage(context: JavaContext, node: UCallExpression, method: PsiMethod) {
-
-        val quickfixData = LintFix.create()
-            .name("Use MyLog.${method.name}()")
-            .replace()
-            .text("Log")
-            .with("MyLog")
-            .robot(true)
-            .independent(true)
-            .build()
-
         context.report(
             issue = ISSUE,
             scope = node,
@@ -38,7 +27,15 @@ class MyLogDetector : Detector(), SourceCodeScanner {
                 includeArguments = true
             ),
             message = "Usage of android Log is prohibited",
-            quickfixData = quickfixData
+            quickfixData = fix()
+                .name("Use MyLog.${method.name}()")
+                .replace()
+                .text("Log")
+                .with("com.hitanshudhawan.library.MyLog")
+                .shortenNames()
+                .reformat(true)
+                .autoFix() // .robot(true).independent(true)
+                .build()
         )
     }
 
