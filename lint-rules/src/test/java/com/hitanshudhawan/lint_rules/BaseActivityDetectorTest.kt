@@ -2,7 +2,7 @@ package com.hitanshudhawan.lint_rules
 
 //import com.android.tools.lint.checks.infrastructure.LintDetectorTest.java
 import com.android.tools.lint.checks.infrastructure.LintDetectorTest.kotlin
-import com.android.tools.lint.checks.infrastructure.TestLintTask
+import com.android.tools.lint.checks.infrastructure.TestLintTask.lint
 import org.junit.Test
 
 class BaseActivityDetectorTest {
@@ -10,7 +10,7 @@ class BaseActivityDetectorTest {
 //    @Test
 //    fun `test AppCompatActivity for Java`() {
 //
-//        TestLintTask.lint()
+//        lint()
 //            .files(
 //                java(
 //                    """
@@ -55,7 +55,7 @@ class BaseActivityDetectorTest {
     @Test
     fun `test AppCompatActivity for Kotlin`() {
 
-        TestLintTask.lint()
+        lint()
             .files(
                 kotlin(
                     """
@@ -83,7 +83,7 @@ class BaseActivityDetectorTest {
 //    @Test
 //    fun `test BaseActivity for Java`() {
 //
-//        TestLintTask.lint()
+//        lint()
 //            .files(
 //                java(
 //                    """
@@ -105,7 +105,7 @@ class BaseActivityDetectorTest {
 //    @Test
 //    fun `test BaseActivity for Kotlin`() {
 //
-//        TestLintTask.lint()
+//        lint()
 //            .files(
 //                kotlin(
 //                    """
