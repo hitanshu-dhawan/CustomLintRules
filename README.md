@@ -18,7 +18,7 @@ Articles
 - [Link](https://medium.com/@roderiklagerweij/writing-a-custom-android-ui-inheritance-lint-rule-9af254480399) : Writing a Custom Android UI Inheritance Lint Rule
 - [Link](https://jayrambhia.com/blog/android-lint) : Get started with Android Lint - Custom Lint Rules
 - [Link](https://jayrambhia.com/blog/android-lint-ref) : Android Lint Deep dive - Advanced custom Lint rules
-- [Link](https://www.bignerdranch.com/blog/building-custom-lint-checks-in-android/) Building Custom Lint Checks in Android
+- [Link](https://www.bignerdranch.com/blog/building-custom-lint-checks-in-android/) : Building Custom Lint Checks in Android
 
 Codes
 - [Link](https://github.com/vanniktech/lint-rules) : Library! A set of very opinionated lint rules
